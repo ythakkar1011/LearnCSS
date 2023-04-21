@@ -1,0 +1,51 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  
+}
+
+main {
+  font-family: monospace;
+}
+
+h1, h2 {
+  color: blue;
+}
+
+/*element selector: use this 2nd most, least specific*/
+p {
+  color: purple;
+}
+
+/*
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+or
+
+use class:
+*/
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+/*class selector: use this most often, 2nd most specific*/
+/*This has more specificity so it takes precedence over the paragraph element selector*/
+.gray {
+  color: gray;
+}
+
+/*id selector: rarely used, most specific*/
+#second {
+  font-style: italic;
+}
+
+/*form elements do not typically inherit*/
+button, input, textarea, select {
+  font: inherit;
+}
