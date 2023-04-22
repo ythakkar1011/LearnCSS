@@ -1,0 +1,41 @@
+/*
+Units resource: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+*/
+
+/*CSS reset:*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Don't want to use hard set pixel values for text, usually because text size won't change if people want it bigger in their settings */
+
+h1 {
+  border: 2px dashed red;
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+/* rem measurement is a variable measurement that is based on a multiplicative value of the default size of a browser page. Looks at root size. ex: 1rem is default, 2rem is twice the default*/
+
+/* em measurement is a variable measurement that is based on a multiplicative value of the default size of the parent element. Looks at parent. ex: 1em is default, 2em is twice the default*/
+
+/* em will not look at the parent element but rather the current element if font size is set */
+main {
+  width: 50vw;
+  background-color: skyblue;
+  font-size: 2rem;
+}
+
+/* ch will put that many characters before wrapping to new line */
+
+p {
+  font-size: 2rem;
+  width: 40ch;
+}
