@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+  /* default
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  */
+  color: hsl(207, 44%, 49%);
+
+}
+
+/*pseudo class (has more specificity than element)*/
+/*Order for same specificity matters: below order is correct*/
+/*flipping visited and hover will make the hover not work on visited links*/
+a:visited {
+  color: purple;
+}
+
+/* focus used for accesibility*/
+a:hover, a:focus {
+  /* color: hsl(185, 44%, 49%); */
+  /* opacity: 0.7; */
+  color: hsl(185, 44%, 49%, 0.7);
+}
+
+a:active {
+  color: red;
+}
