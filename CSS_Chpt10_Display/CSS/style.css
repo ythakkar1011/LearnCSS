@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+/*block level elements have a default 100% width and stack on top of each other*/
+p{
+  background-color: lightgray;
+}
+
+/*in-line element do not stack on top of each other and only take up the width of their content*/
+.opposite {
+  display: inline-block;
+  background-color: #333;
+  color: whitesmoke;
+  /*margin-top: 100px; cant apply a top or bottom margin or height to an in-line element*/
+
+  padding: 4rem;/*if display is not set, there will be overlap*/
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  text-align: right;
+  background-color: #000;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover, li a:focus{
+  text-decoration: underline;
+}
+
